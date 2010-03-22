@@ -32,7 +32,7 @@ YES = HEADER + '
 <div style="text-align: center; font-size: 6em;">yes!</div>
 <script type="text/javascript" src="/cornify.js"></script>
 <script language="javascript">
-  for (var i = 0; i < 20; i++) {
+  for (var i = 0; i < 10; i++) {
     cornify_add();
   }
 </script>
