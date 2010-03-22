@@ -1,6 +1,14 @@
 require 'rubygems'
 require 'sinatra'
 
+CREDITS = '
+  <!--
+    Site by Robby Grossman (http://freerobby.com).
+    Unicorns supplied by Cornify (http://cornify.com).
+    Project is open-sourced on github (http://github.com/freerobby/didtheypasshealthcarereform)
+  -->
+'
+
 HEADER = '
 <html>
   <head>
@@ -26,7 +34,7 @@ FOOTER = '
 </html>
 '
 
-NO = HEADER + '<div style="text-align: center; font-size: 6em;">no</div>' + GA + FOOTER
+NO = HEADER + '<div style="text-align: center; font-size: 6em;">no</div>' + GA + FOOTER + CREDITS
 
 YES = HEADER + '
 <div style="text-align: center; font-size: 6em;">yes!</div>
@@ -36,7 +44,7 @@ YES = HEADER + '
     cornify_add();
   }
 </script>
-' + GA + FOOTER
+' + GA + FOOTER + CREDITS
 
 get '/' do
   YES
