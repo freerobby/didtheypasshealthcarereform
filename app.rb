@@ -39,5 +39,5 @@ YES = HEADER + '
 ' + GA + FOOTER
 
 get '/' do
-  NO
+  YES
 end
