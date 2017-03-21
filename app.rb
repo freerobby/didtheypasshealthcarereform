@@ -47,5 +47,5 @@ YES = HEADER + '
 ' + GA + FOOTER + CREDITS
 
 get '/' do
-  YES
+  NO
 end
